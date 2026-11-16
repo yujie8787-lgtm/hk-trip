@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>香港吃吃吃｜12/19–12/21 行程</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --kraft:#cdb287; --paper:#f6edd8; --ink:#2b3a4a; --sepia:#7a5a3a; --muted:#5d5140;
+  --stamp:#b03a2e; --blue:#2f5d8a; --green:#4f7a4a;
+  --hand:"LXGW WenKai TC","Kaiti TC","DFKai-SB","Noto Serif TC",serif;
+  --serif:"Noto Serif TC","Songti TC","PMingLiU",serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:56px}
+body{margin:0;color:var(--ink);font-family:var(--hand);line-height:1.8;font-size:17px;
+  background-color:var(--kraft);
+  background-image:radial-gradient(rgba(60,40,20,.13) 1px,transparent 1.4px);background-size:13px 13px}
+a{color:var(--blue);font-weight:700;text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--stamp);outline-offset:2px}
+
+.stripe{height:18px;background:repeating-linear-gradient(-45deg,var(--stamp) 0 16px,var(--paper) 16px 28px,var(--blue) 28px 44px,var(--paper) 44px 56px)}
+header,.day{position:relative;background:var(--paper);box-shadow:0 2px 3px rgba(40,25,10,.3),0 10px 22px rgba(40,25,10,.18)}
+header::before,.day::before{content:"";position:absolute;top:-14px;left:50%;width:128px;height:30px;
+  background:var(--tape,rgba(226,185,90,.85));transform:translateX(-50%) rotate(-3deg);
+  clip-path:polygon(0 8%,4% 0,8% 10%,12% 0,100% 0,96% 50%,100% 100%,12% 100%,8% 90%,4% 100%,0 92%,3% 50%)}
+header{--tape:rgba(217,154,152,.9);max-width:760px;margin:36px auto 0;padding:44px 24px 32px;text-align:center}
+header h1{font-family:var(--serif);font-weight:900;font-size:clamp(2.8rem,14vw,5.6rem);line-height:1.15;margin:0;color:var(--ink);
+  text-decoration:underline wavy var(--stamp);text-decoration-thickness:3px;text-underline-offset:12px}
+header p{margin:18px 0 0;font-size:1.1rem;color:var(--muted)}
+.route{display:inline-block;margin-top:18px;padding:2px 18px;border:3px double var(--stamp);color:var(--stamp);font-weight:700;border-radius:6px;transform:rotate(-3deg)}
+
+.tickets{max-width:760px;margin:26px auto 0;padding:0 12px;display:grid;gap:18px}
+.ticket{display:grid;grid-template-columns:1fr 112px;background:#fbf5e4;border:2px solid var(--ink);border-radius:6px;overflow:hidden;box-shadow:0 3px 8px rgba(40,25,10,.25);transform:rotate(-.6deg)}
+.ticket.back{transform:rotate(.6deg)}
+.ticket .main{padding:16px 20px}
+.ticket .tag{font-weight:700;color:var(--sepia)}
+.ticket .leg{display:flex;align-items:center;gap:12px;margin:6px 0}
+.ticket .city{font-family:var(--serif);font-weight:900;font-size:2.3rem;line-height:1.1}
+.ticket .time{font-size:.95rem}
+.ticket .end{text-align:right}
+.ticket .path{flex:1;min-width:28px;border-top:2px dashed var(--sepia);position:relative}
+.ticket .path::after{content:"✈";position:absolute;left:50%;top:-15px;transform:translateX(-50%);background:#fbf5e4;padding:0 6px}
+.ticket .alert{margin:0;font-size:.95rem;color:var(--muted)}
+.ticket .stub{background:var(--blue);color:var(--paper);border-left:2px dashed var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:12px 8px;text-align:center}
+.ticket.back .stub{background:var(--stamp)}
+.ticket .stub small{font-size:.85rem}
+.ticket .stub strong{font-size:1.3rem;letter-spacing:.04em}
+
+nav{position:sticky;top:0;z-index:5;margin-top:26px;background:#5b4328;display:flex;justify-content:center;gap:6px;padding:8px}
+nav a{color:var(--paper);text-decoration:none;padding:2px 20px;border-radius:4px}
+nav a:hover{background:var(--paper);color:var(--ink)}
+
+main{max-width:780px;margin:0 auto;padding:18px 12px 56px}
+.day{margin-top:44px;padding:36px 22px 14px}
+#d19{--tape:rgba(130,185,160,.88)}
+#d20{--tape:rgba(226,185,90,.88)}
+#d21{--tape:rgba(217,154,152,.9)}
+.day h2{display:flex;align-items:center;gap:18px;margin:0;line-height:1.2}
+.num{display:grid;place-items:center;flex:none;width:86px;height:86px;border:4px double var(--stamp);border-radius:50%;
+  color:var(--stamp);font-family:var(--serif);font-weight:900;font-size:2.6rem;transform:rotate(-9deg)}
+.ttl{font-family:var(--serif);font-weight:900;font-size:clamp(1.5rem,5vw,2.1rem)}
+.ttl small{display:block;font-family:var(--hand);font-size:1rem;font-weight:400;color:var(--sepia)}
+.goal{margin:22px 0 0;padding:10px 16px;background:#f3df8e;transform:rotate(-.5deg);box-shadow:0 2px 5px rgba(40,25,10,.25);font-weight:700}
+
+ol.stops{list-style:none;margin:26px 0 0;padding:0}
+.stop{--c:var(--stamp);display:grid;grid-template-columns:72px 1fr;gap:0 12px;position:relative;padding-bottom:24px}
+.stop.go{--c:var(--blue)}
+.stop.see{--c:var(--green)}
+.stop.stay{--c:var(--sepia)}
+.stop::before{content:"";position:absolute;left:79px;top:16px;bottom:-4px;border-left:2px dotted var(--sepia)}
+.stop:last-child::before{display:none}
+.when{text-align:right;font-weight:700;color:var(--sepia);font-size:.95rem;font-variant-numeric:tabular-nums}
+.body{position:relative;padding-left:26px}
+.body::before{content:"";position:absolute;left:-3px;top:9px;width:14px;height:14px;border-radius:50%;background:var(--paper);border:3px solid var(--c)}
+.body h3{margin:0;font-family:var(--serif);font-weight:700;font-size:1.2rem;line-height:1.5}
+.meta{margin:6px 0 0;font-size:.93rem;color:var(--muted);line-height:1.7}
+.meta b{color:var(--ink);margin-right:8px}
+.dishes{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0;padding:0}
+.dishes li{padding:0 12px;border:1.5px dashed var(--stamp);background:#fbf5e4;font-size:.95rem}
+.note{margin:8px 0 0}
+.links{margin:8px 0 0;display:flex;gap:16px;flex-wrap:wrap;font-size:.95rem}
+
+footer{text-align:center;padding:26px 16px 36px;background:#5b4328;color:var(--paper)}
+
+@media (max-width:520px){
+  body{font-size:16px}
+  .day{padding:34px 14px 8px}
+  .num{width:70px;height:70px;font-size:2.1rem}
+  .stop{grid-template-columns:54px 1fr}
+  .stop::before{left:61px}
+  .when{font-size:.85rem}
+  .ticket{grid-template-columns:1fr 88px}
+  .ticket .main{padding:14px}
+  .ticket .city{font-size:1.8rem}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="stripe"></div>
+<header>
+  <h1>香港吃吃吃</h1>
+  <p>12/19–12/21｜三天兩夜的港式美食行程</p>
+  <div class="route">台中 ⇄ 香港</div>
+</header>
+<section class="tickets" aria-label="機票">
+  <article class="ticket">
+    <div class="main">
+      <div class="tag">去程｜12/19</div>
+      <div class="leg">
+        <div><div class="city">台中</div><div class="time">20:35 起飛</div></div>
+        <div class="path"></div>
+        <div class="end"><div class="city">香港</div><div class="time">22:25 抵達</div></div>
+      </div>
+      <p class="alert">最晚 19:30 要完成報到</p>
+    </div>
+    <div class="stub"><small>航班</small><strong>UO183</strong></div>
+  </article>
+  <article class="ticket back">
+    <div class="main">
+      <div class="tag">回程｜12/21</div>
+      <div class="leg">
+        <div><div class="city">香港</div><div class="time">18:15 起飛</div></div>
+        <div class="path"></div>
+        <div class="end"><div class="city">台中</div><div class="time">19:50 抵達</div></div>
+      </div>
+      <p class="alert">16:00 要到機場</p>
+    </div>
+    <div class="stub"><small>航班</small><strong>UO182</strong></div>
+  </article>
+</section>
+<nav aria-label="日期">
+  <a href="#d19">12/19</a><a href="#d20">12/20</a><a href="#d21">12/21</a>
+</nav>
+<main id="app"></main>
+<footer>香港吃吃吃｜去程 UO183，回程 UO182</footer>
+
+<script>
+// 資料區：要改行程，只要改這裡。k 代表類型：eat 吃、go 交通、see 景點、stay 住宿
+const IG = "https://www.instagram.com/reel/DWOo4UvD8JB/?vrfl=MTIwZTJudjg4aWNtdg==";
+const days = [
+{ id:"d19", date:"12/19", title:"出發與宵夜", items:[
+  { k:"go", t:"18:00", name:"下班，開車到機場", note:"19:00 抵達台中機場，最晚 19:30 要完成報到。" },
+  { k:"go", t:"20:35", name:"台中 ✈ 香港（UO183）", note:"22:25 抵達香港。" },
+  { k:"go", t:"入境後", name:"搭城巴 A21：機場 → 尖東站",
+    meta:[
+      ["怎麼走","出入境和領行李後，跟著指標到機場地面運輸中心（巴士總站），A21 的終點站就是這裡。"],
+      ["車費","全程成人 $34.6，上車付費即可，不需要預先買票。備好八達通或可感應的信用卡／電子支付。"],
+      ["方向","搭往紅磡站方向，在尖東站（梳士巴利道）下車。"],
+      ["車程","約 70–80 分鐘，預計 00:30–00:45 到尖東站。"]
+    ],
+    links:[["搭車教學影片",IG],["A21 時刻表","https://mobile.citybus.com.hk/nwp3/?f=1&ds=A21--Hung_Hom_Station&l=0"]] },
+  { k:"go", name:"走路到飯店", note:"約 500 公尺。", links:[["查看步行路線","https://maps.app.goo.gl/YrAdGxEeqd8KGLSc8?g_st=ic"]] },
+  { k:"stay", name:"香港客舍飯店", meta:[["地址","香港油尖旺區尖沙咀赫德道4號"]], note:"先回飯店放東西，再去吃宵夜。" },
+  { k:"eat", name:"蓮香樓（尖沙咀店）", meta:[["地址","尖沙咀金巴利道25號 1–2 樓"],["營業","24 小時"]],
+    dishes:["鮮蝦滑腸粉","奶黃流沙包","招牌蝦多士","蜜汁叉燒包"] }
+]},
+{ id:"d20", date:"12/20", title:"港島與九龍吃透透", goal:"首要任務：拍地鐵九宮格、搭落日飛車、看維多利亞港。", items:[
+  { k:"go", t:"8:30", name:"出門" },
+  { k:"eat", name:"祥興記上海生煎包（尖沙咀）", meta:[["地址","尖沙咀樂道48號"],["營業","每日 09:00–21:00"]], dishes:["生煎包"] },
+  { k:"eat", name:"蘭芳園（尖沙咀店）", meta:[["地址","尖沙咀彌敦道44號（重慶大廈地庫）"],["營業","每日 10:30–18:00"]], dishes:["絲襪奶茶"], note:"這裡還可以塞東西，或是拍照。" },
+  { k:"go", t:"12:00", name:"港鐵到灣仔", note:"12:00 抵達。" },
+  { k:"eat", name:"竺扶大班燒味（灣仔）", meta:[["地址","灣仔三角街2–3號華欣閣地下3號舖"],["營業","每日 09:30–20:30"]], dishes:["銷魂叉燒皇＋燒腩仔雙拼＋鵝汁撈瀨粉"] },
+  { k:"eat", name:"晶晶甜品", meta:[["地址","香港灣仔灣仔道8號尚翹峰地下A1舖（近皇后大道東258號）"],["營業","每日 13:00–23:00"],["交通","港鐵灣仔站 A3 出口，步行 6 分鐘"]], dishes:["丸子奶黃西米露","玫瑰酒薑汁湯圓玫瑰露酒餡","楊枝甘露"] },
+  { k:"go", name:"搭叮叮電車", note:"從灣仔出發，約 30–40 分鐘。" },
+  { k:"see", name:"中環街市", meta:[["交通","叮叮車在機利文街站或租庇利街站下車，步行至街市。"],["地址","皇后大道中93號"],["營業","每日 10:00–22:00"]] },
+  { k:"eat", name:"沾仔記", meta:[["地址","皇后大道中153號"],["營業","每日 11:00–21:00"]], dishes:["招牌雲吞麵","鮮牛肉麵","蠔油撈麵"] },
+  { k:"see", name:"PMQ 元創方", meta:[["交通","港鐵上環站 E1 出口，走路約 7 分鐘；或中環站 C 出口，搭半山手扶梯到荷里活道，走路 5 分鐘。"],["地址","鴨巴甸街35號"],["營業","每日 12:00–22:00"]] },
+  { k:"see", name:"中環摩天輪" },
+  { k:"go", t:"17:30", name:"H2K 落日飛車", note:"每 30 分鐘一班。中環天星碼頭 → 金馬倫道／尖沙咀。" },
+  { k:"see", name:"維多利亞港", note:"逛逛看夜景。" },
+  { k:"eat", name:"一點心（尖沙咀）", meta:[["地址","尖沙咀赫德道4號地下"],["營業","每日 09:00–00:00"]], dishes:["鮮蝦滑腸粉","蟹黃蒸燒賣","蜜汁叉燒包","薄皮鮮蝦餃","香煎蘿蔔糕"] }
+]},
+{ id:"d21", date:"12/21", title:"補拍、補吃、回家", goal:"時間充裕，可以把地鐵九宮格拍齊。", items:[
+  { k:"eat", name:"紅茶冰室 RED TEA（尖沙咀）", meta:[["地址","尖沙咀金馬倫道7B號"],["營業","每日 07:00–23:00"]], dishes:["脆皮冰火菠蘿油"] },
+  { k:"see", name:"海港城", meta:[["地址","香港九龍尖沙咀廣東道25號"],["營業","每日 10:00–22:00"]] },
+  { k:"eat", name:"華星冰室（美丁道）", meta:[["地址","尖沙咀美丁道8號 The Pinnacle 地下 G7–G8 號舖"],["營業","每日 07:30–22:30"]], dishes:["黑松露炒蛋多士","菠蘿油","港式奶茶"] },
+  { k:"eat", name:"Bakehouse 蛋撻與楊枝甘露泡芙", note:"回家前買。直接線上訂，快速取貨。機場第一航廈出境層（7E138 和 7E152）有分店。", links:[["線上訂購教學","https://www.threads.com/share/_zGVZoVN7"]] },
+  { k:"go", t:"16:00", name:"抵達機場" },
+  { k:"go", t:"18:15", name:"香港 ✈ 台中（UO182）", note:"19:50 抵達，要回家了。" }
+]}
+];
+
+const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;");
+const stop = s => `
+<li class="stop ${s.k}">
+  <div class="when">${s.t ? esc(s.t) : ""}</div>
+  <div class="body">
+    <h3>${esc(s.name)}</h3>
+    ${(s.meta||[]).map(([a,b]) => `<p class="meta"><b>${esc(a)}</b>${esc(b)}</p>`).join("")}
+    ${s.dishes ? `<ul class="dishes">${s.dishes.map(d => `<li>${esc(d)}</li>`).join("")}</ul>` : ""}
+    ${s.note ? `<p class="note">${esc(s.note)}</p>` : ""}
+    ${s.links ? `<div class="links">${s.links.map(([a,h]) => `<a href="${h}" target="_blank" rel="noopener">${esc(a)}</a>`).join("")}</div>` : ""}
+  </div>
+</li>`;
+
+document.getElementById("app").innerHTML = days.map(d => `
+<section class="day" id="${d.id}">
+  <h2><span class="num">${d.date.split("/")[1]}</span><span class="ttl"><small>${d.date.split("/")[0]} 月</small>${esc(d.title)}</span></h2>
+  ${d.goal ? `<p class="goal">${esc(d.goal)}</p>` : ""}
+  <ol class="stops">${d.items.map(stop).join("")}</ol>
+</section>`).join("");
+</script>
+</body>
+</html>
